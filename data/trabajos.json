@@ -1,0 +1,559 @@
+{
+  "barandas" : [
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/barandas/0.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/barandas/1.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos tablet align-self-end",
+      "pathImagen": "./img/trabajos/barandas/21.jpg",
+      "alt": "tablet"
+    },
+    {
+      "class": "dispositivos tv",
+      "pathImagen": "./img/trabajos/barandas/3.jpg",
+      "alt": "tv"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/4.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/5.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/6.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/7.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/8.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/9.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/10.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/11.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/12.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/13.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/barandas/14.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos tablet align-self-end",
+      "pathImagen": "./img/trabajos/barandas/15.jpg",
+      "alt": "tablet"
+    },
+    {
+      "class": "dispositivos tv",
+      "pathImagen": "./img/trabajos/barandas/16.jpg",
+      "alt": "tv"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/17.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/18.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/19.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/20.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/2.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/22.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/23.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/24.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/25.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/26.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/27.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/28.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/29.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/25.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/30.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/31.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/32.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/33.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/34.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/35.jpg",
+      "alt": "smarthphone"
+    },
+    {
+      "class": "dispositivos phone",
+      "pathImagen": "./img/trabajos/barandas/36.jpg",
+      "alt": "smarthphone"
+    }
+  ],
+
+  "campanas" : [
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/campanas/1.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/campanas/2.jpg",
+      "alt": "pc"
+    } 
+  ],
+
+  "frentes" : [
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/0.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/1.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/2.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/3.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/4.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/5.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/6.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/7.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/8.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/9.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/10.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/11.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/12.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/13.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/14.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/15.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/16.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/10.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/17.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/18.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/19.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/20.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/21.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/22.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/23.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/24.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/25.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/26.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/27.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/28.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/29.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/frentes/30.jpg",
+      "alt": "pc"
+    }     
+  ],
+
+  "helices" : [
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/helices/0.jpg",
+      "alt": "pc"
+    }
+  ],
+
+  "hogar" : [
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/hogar/7.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/hogar/2.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/hogar/1.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/hogar/3.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/hogar/4.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/hogar/5.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/hogar/6.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/hogar/7.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/hogar/8.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/hogar/9.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/hogar/10.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/hogar/11.jpg",
+      "alt": "pc"
+    }
+  ],
+
+  "negocios" : [
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/negocios/1.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/negocios/2.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/negocios/3.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/negocios/4.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/negocios/5.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/negocios/6.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/negocios/7.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/negocios/8.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/negocios/9.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/negocios/10.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/negocios/11.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/negocios/12.jpg",
+      "alt": "pc"
+    }
+  ],
+
+  "porteros" : [
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/porteros/5.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/porteros/1.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/porteros/3.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/porteros/4.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/porteros/6.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/porteros/2.jpg",
+      "alt": "pc"
+    } 
+  ],
+
+  "puertas" : [
+     
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/puertas/1.jpg",
+      "alt": "pc"
+    },
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/puertas/3.jpg",
+      "alt": "pc"
+    }, 
+    {
+      "class": "dispositivos pc mx-auto",
+      "pathImagen": "./img/trabajos/puertas/2.jpg",
+      "alt": "pc"
+    } 
+
+  ]
+
+ 
+} 

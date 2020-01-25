@@ -34,7 +34,7 @@ body{
 
     a{
       color:white;
-      font-size: 16px;
+      font-size: 18px;
     }
 
     .fab{
@@ -146,8 +146,9 @@ body{
         margin-left: -50px;
         top: 50%;
         margin-top: -50px;
-        font-size: 42px;
+        font-size: 55px;
         letter-spacing: 1px;
+        text-shadow: 2px 2px 2px #000;
 
         span{
           font-size: 22px;
@@ -256,6 +257,11 @@ body{
           
         }
       }
+      
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: inherit;
+
     }
   }
 
@@ -405,7 +411,9 @@ body{
     }
    
   }
-   
+  
+
+  // GENERALES 
   footer{
     background-color: $color-gris-oscuro;
     text-align: center;
@@ -423,6 +431,20 @@ body{
     background-color: #333333f0;
     padding: 20px;
   }
+
+  #button_up{
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin: 30px;
+    background-color: #a6834280;
+    border: 2px solid #a68342;
+    border-radius: 150px;
+    padding: 12px 16px;
+    color: #fff;
+  }
+
 
 }
 
@@ -467,6 +489,14 @@ body{
     font-weight: bold;
     background-color: blue;
 
+    .logo-mobile{
+      padding-right: 55px;
+    }
+
+    .fab{
+      font-weight: 400;
+    }
+
     .logo_central{
       display: none;
     }
@@ -500,7 +530,12 @@ body{
 @include mq(sm) {
   body {
     font-weight: bold; 
+    background-color: pink;
     
+    .logo-mobile{
+      padding-right: 55px;
+    }
+
     %sliders {
       height: 100vw;
     }
@@ -511,8 +546,14 @@ body{
 
 @include mq(xs) {
   body {
-    font-weight: bold;
-    background-color: blue;
+    
+    background-color: yellow;
+
+    .logo-mobile{
+      padding-right: 55px;
+    }
+
+    font-weight: bold; 
   }
 }
  

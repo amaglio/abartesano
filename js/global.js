@@ -74,6 +74,27 @@ function controladorMenu()
 }
 
 
+function controladorBottomup()
+{
+ 
+  $(window).scroll(function (event) {
+      
+      var st = $(this).scrollTop();
+ 
+     lastScrollTop = st;
+
+     if( lastScrollTop > 438 )
+     {
+      $("#button_up").css("display","block");
+     }
+     else
+     {
+        $("#button_up").css("display","none");
+     }
+  });
+ 
+
+}
  
 
 $( ".tipo-de-trabajo" ).click(function() {
@@ -82,13 +103,17 @@ $( ".tipo-de-trabajo" ).click(function() {
     cargarTrabajos(tipoTrabajo); 
 });
 
-
+$("#button_up").click(function(){
+    console.log("apreto");  
+    //$(window).scrollTop(0);
+    //$("html, body").animate({ scrollTop: 0 }, 600);
+     $("HTML, BODY").animate({ scrollTop: 0 }, 1000); 
+});
 
 $(document).ready(function() {
 
   cargarSlider();  
   cargarTrabajos("barandas"); 
-
   controladorMenu();
-
+  controladorBottomup();
 })

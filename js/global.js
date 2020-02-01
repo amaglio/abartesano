@@ -38,16 +38,16 @@ function cargarTrabajos(pTipoTrabajo)
     // Trabajos
     $.each( trabajos, function( tipoTrabajo, trabajosDelTipo ) {
         
-        console.log("Json: "+tipoTrabajo+":"+typeof(tipoTrabajo)  );
-        console.log("Parametro: "+pTipoTrabajo+":"+typeof(pTipoTrabajo)  );
-        console.log(tipoTrabajo == pTipoTrabajo);
+        // console.log("Json: "+tipoTrabajo+":"+typeof(tipoTrabajo)  );
+        // console.log("Parametro: "+pTipoTrabajo+":"+typeof(pTipoTrabajo)  );
+        // console.log(tipoTrabajo == pTipoTrabajo);
 
 
         if( tipoTrabajo.trim() == pTipoTrabajo.trim() )
         { //console.log("si"); 
 
           $.each( trabajosDelTipo, function( key, val ) {
-              console.log( val.pathImagen );
+              // console.log( val.pathImagen );
               $("#gallery").append(" <img alt='Trabajo' src='"+val.pathImagen+"' data-image='"+val.pathImagen+"' data-image-mobile='"+val.pathImagen+"'  data-thumb-mobile='"+val.pathImagen+"' data-description='This is a Lemon Slice' style='display:none'> ");
             
           });
@@ -64,7 +64,7 @@ function controladorMenu()
 {
   $(window).scroll(function (event) {
       var scroll = $(window).scrollTop();
-      console.log(scroll);
+      // console.log(scroll);
       if(scroll > 150)
         $( ".navbar" ).addClass( "menu-negro" );
       else
@@ -99,12 +99,12 @@ function controladorBottomup()
 
 $( ".tipo-de-trabajo" ).click(function() {
     const tipoTrabajo = $(this).text().toLowerCase();
-    console.log("Onclic: "+tipoTrabajo);
+    // console.log("Onclic: "+tipoTrabajo);
     cargarTrabajos(tipoTrabajo); 
 });
 
 $("#button_up").click(function(){
-    console.log("apreto");  
+    // console.log("apreto");  
     //$(window).scrollTop(0);
     //$("html, body").animate({ scrollTop: 0 }, 600);
      $("HTML, BODY").animate({ scrollTop: 0 }, 1000); 

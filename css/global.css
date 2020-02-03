@@ -1,315 +1,516 @@
 body {
-  font-family: "Trirong", serif; }
-  body .menu-negro {
-    transition: background-color 1s;
-    background-color: #000000d6; }
-  body .navbar {
-    z-index: 600;
-    padding: 0px;
-    /* 
+  font-family: "Trirong", serif;
+}
+
+body .menu-negro {
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+  background-color: #000000d6;
+  padding-bottom: 10px !important;
+}
+
+body .navbar {
+  z-index: 600;
+  padding: 0px;
+  /* 
       ========================
             BUTTON ONE
       ========================
-      */ }
-    body .navbar a {
-      color: white;
-      font-size: 18px; }
-    body .navbar .fab {
-      font-size: 25px;
-      margin: 0px 13px; }
-    body .navbar .navbar-nav {
-      text-align: center; }
-    body .navbar .iconos {
-      padding-top: .5rem; }
-    body .navbar .fa-bars {
-      font-size: 37px;
-      color: white; }
-    body .navbar div[class*=box] {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    body .navbar .logo_central img {
-      width: 80%; }
-    body .navbar .btn-one {
-      color: #FFF;
-      transition: all 0.3s;
-      position: relative; }
-    body .navbar .btn-one span {
-      transition: all 0.3s; }
-    body .navbar .btn-one::before {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      opacity: 0;
-      transition: all 0.3s;
-      border-top-width: 1px;
-      border-bottom-width: 1px;
-      border-top-style: solid;
-      border-bottom-style: solid;
-      border-top-color: rgba(255, 255, 255, 0.5);
-      border-bottom-color: rgba(255, 255, 255, 0.5);
-      transform: scale(0.1, 1); }
-    body .navbar .btn-one:hover span {
-      letter-spacing: 2px; }
-    body .navbar .btn-one:hover::before {
-      opacity: 1;
-      transform: scale(1, 1); }
-    body .navbar .btn-one::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      transition: all 0.3s; }
-    body .navbar .btn-one:hover::after {
-      opacity: 0;
-      transform: scale(0.1, 1); }
-  body #slider-central {
-    position: relative; }
-    body #slider-central .swiper-button-prev, body #slider-central .swiper-button-next {
-      color: white;
-      padding: 0px 20px; }
-    body #slider-central .slider1, body #slider-central .slider2 {
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      background-size: cover;
-      -o-background-size: cover;
-      height: 47vw;
-      color: white; }
-      body #slider-central .slider1 h1, body #slider-central .slider2 h1 {
-        position: relative;
-        margin-left: -50px;
-        top: 50%;
-        margin-top: -50px;
-        font-size: 55px;
-        letter-spacing: 1px;
-        text-shadow: 2px 2px 2px #000;
-        text-align: center; }
-        body #slider-central .slider1 h1 span, body #slider-central .slider2 h1 span {
-          font-size: 22px; }
-    body #slider-central .slider1 {
-      background: linear-gradient(rgba(0, 0, 0, 0.42), transparent), url("../img/slider/1.jpg") no-repeat center center fixed; }
-    body #slider-central .slider2 {
-      background: linear-gradient(rgba(0, 0, 0, 0.42), transparent), url("../img/slider/2.jpg") no-repeat center center fixed; }
-    body #slider-central .slider3 {
-      background: url("../img/slider/3.JPG") no-repeat center center fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      background-size: cover;
-      -o-background-size: cover; }
-    body #slider-central #prologo-central .col-lg-12 {
-      padding: 30px 80px;
-      background-color: #333333;
-      color: white;
-      border-radius: 10px;
-      position: relative;
-      margin-top: -10%;
-      z-index: 20;
-      font-size: 22px;
-      text-align: center;
-      letter-spacing: 2px; }
-  body #mis-trabajos .menu-tipos-trabajos {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: inherit; }
-    body #mis-trabajos .menu-tipos-trabajos li {
-      cursor: pointer;
-      list-style: none;
-      border: none;
-      position: relative;
-      display: block;
-      text-transform: uppercase;
-      margin: 10px 0;
-      padding: 10px 20px;
-      text-decoration: none;
-      color: #262626;
-      font-size: 16px;
-      letter-spacing: 1px;
-      transition: 1s;
-      z-index: 1; }
-      body #mis-trabajos .menu-tipos-trabajos li:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-top: 2px solid #262626;
-        border-bottom: 2px solid #262626;
-        transform: scaleY(2);
-        opacity: 0;
-        transition: .3s; }
-      body #mis-trabajos .menu-tipos-trabajos li:after {
-        content: '';
-        position: absolute;
-        top: 2px;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #262626;
-        transform: scale(0);
-        opacity: 0;
-        transition: .3s;
-        z-index: -1; }
-      body #mis-trabajos .menu-tipos-trabajos li:hover {
-        color: #fff; }
-        body #mis-trabajos .menu-tipos-trabajos li:hover:before {
+      */
+}
+
+body .navbar a {
+  color: white;
+  font-size: 18px;
+}
+
+body .navbar .fab {
+  font-size: 25px;
+  margin: 0px 13px;
+}
+
+body .navbar .navbar-nav {
+  text-align: center;
+}
+
+body .navbar .iconos {
+  padding-top: .5rem;
+}
+
+body .navbar .fa-bars {
+  font-size: 37px;
+  color: white;
+}
+
+body .navbar div[class*=box] {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .navbar .logo_central img {
+  width: 80%;
+}
+
+body .navbar .btn-one {
+  color: #FFF;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+}
+
+body .navbar .btn-one span {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+body .navbar .btn-one::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+  -webkit-transform: scale(0.1, 1);
+          transform: scale(0.1, 1);
+}
+
+body .navbar .btn-one:hover span {
+  letter-spacing: 2px;
+}
+
+body .navbar .btn-one:hover::before {
+  opacity: 1;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+body .navbar .btn-one::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+body .navbar .btn-one:hover::after {
+  opacity: 0;
+  -webkit-transform: scale(0.1, 1);
+          transform: scale(0.1, 1);
+}
+
+body #slider-central {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  position: relative;
+}
+
+body #slider-central .swiper-button-prev, body #slider-central .swiper-button-next {
+  color: white;
+  padding: 0px 20px;
+}
+
+body #slider-central .slider1, body #slider-central .slider2 {
+  background-size: cover;
+  -o-background-size: cover;
+  height: 47vw;
+  color: white;
+}
+
+body #slider-central .slider1 h1, body #slider-central .slider2 h1 {
+  position: relative;
+  margin-left: -50px;
+  top: 50%;
+  margin-top: -50px;
+  font-size: 55px;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 2px #000;
+  text-align: center;
+}
+
+body #slider-central .slider1 h1 span, body #slider-central .slider2 h1 span {
+  font-size: 22px;
+}
+
+body #slider-central .slider1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.42)), to(rgba(0, 0, 0, 0))), url("../img/slider/1.jpg") no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0)), url("../img/slider/1.jpg") no-repeat center center fixed;
+}
+
+body #slider-central .slider2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.42)), to(rgba(0, 0, 0, 0))), url("../img/slider/2.jpg") no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0)), url("../img/slider/2.jpg") no-repeat center center fixed;
+}
+
+body #slider-central .slider3 {
+  background: url("../img/slider/3.JPG") no-repeat center center fixed;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+body #slider-central #prologo-central .col-lg-12 {
+  padding: 30px 80px;
+  background-color: #333333;
+  color: white;
+  border-radius: 10px;
+  position: relative;
+  margin-top: -10%;
+  z-index: 20;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+body #mis-trabajos .menu-tipos-trabajos {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: inherit;
+  -webkit-box-direction: inherit;
+      -ms-flex-direction: inherit;
+          flex-direction: inherit;
+}
+
+body #mis-trabajos .menu-tipos-trabajos li {
+  cursor: pointer;
+  list-style: none;
+  border: none;
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  margin: 10px 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #262626;
+  font-size: 16px;
+  letter-spacing: 1px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 1;
+}
+
+body #mis-trabajos .menu-tipos-trabajos li:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #262626;
+  border-bottom: 2px solid #262626;
+  -webkit-transform: scaleY(2);
+          transform: scaleY(2);
+  opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+body #mis-trabajos .menu-tipos-trabajos li:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+  z-index: -1;
+}
+
+body #mis-trabajos .menu-tipos-trabajos li:hover {
+  color: #fff;
+}
+
+body #mis-trabajos .menu-tipos-trabajos li:hover:before {
+  -webkit-transform: scaleY(1);
           transform: scaleY(1);
-          opacity: 1; }
-        body #mis-trabajos .menu-tipos-trabajos li:hover:after {
+  opacity: 1;
+}
+
+body #mis-trabajos .menu-tipos-trabajos li:hover:after {
+  -webkit-transform: scaleY(1);
           transform: scaleY(1);
-          opacity: 1; }
-  body #mis-especialidades {
-    /* Rotar imagenes */
-    /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-    /* This container is needed to position the front and back side */
-    /* Do an horizontal flip when you move the mouse over the flip box container */
-    /* Position the front and back side */
-    /* Style the front side (fallback if image is missing) */
-    /* Style the back side */
-    /* End rotar imagenes */ }
-    body #mis-especialidades .flip-box {
-      background-color: transparent;
-      width: 100%;
-      height: 100%;
-      /*border: 1px solid #f1f1f1;*/
-      border: none;
-      border-radius: 0px !important;
-      perspective: 1000px;
-      /* Remove this if you don't want the 3D effect */ }
-    body #mis-especialidades .flip-box-inner {
-      position: relative;
-      width: 100%;
-      height: 253px;
-      text-align: center;
-      transition: transform 0.8s;
-      transform-style: preserve-3d; }
-    body #mis-especialidades .flip-box:hover .flip-box-inner {
-      transform: rotateY(180deg); }
-    body #mis-especialidades .flip-box-front, body #mis-especialidades .flip-box-back {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden; }
-    body #mis-especialidades .flip-box-front {
-      background-color: #fff0;
-      color: black; }
-    body #mis-especialidades .flip-box-back {
-      background-color: #2d2d2d;
-      color: white;
-      transform: rotateY(180deg);
-      height: inherit !important;
-      padding: 20px;
-      z-index: 600; }
-    body #mis-especialidades .flip-box-back h2 {
-      padding: 20px; }
-    body #mis-especialidades .flip-box-front .img-fluid {
-      max-width: 100%;
-      height: 100%;
-      width: 100%; }
-    body #mis-especialidades .titulo {
-      width: inherit;
-      position: absolute;
-      top: 12%;
-      color: white;
-      left: 0px;
-      font-size: 40px;
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-      font-weight: 500;
-      z-index: 600; }
-    body #mis-especialidades .flip-box-front p {
-      width: inherit;
-      position: absolute;
-      top: 65%;
-      color: white;
-      left: 0px;
-      font-size: 23px;
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-      font-weight: 500;
-      z-index: 600; }
-  body #pedi-presupuesto input.form-control {
-    height: 55px; }
-  body #pedi-presupuesto .row:nth-child(2) {
-    background-color: #dddddd;
-    padding: 20px 0px; }
-  body #pedi-presupuesto #enviar {
-    background-color: #333333;
-    border: #333;
-    padding: 10px 20px; }
-  body #pedi-presupuesto .container {
-    padding: 20px 0px; }
-  body #contactame .fas, body #contactame .fab {
-    color: #dddddd;
-    padding-right: 20px; }
-  body #contactame .a-whatsapp {
-    font-weight: 900; }
-  body #contactame .redes div {
-    padding: 20px 0px;
-    font-size: 18px; }
-  body footer {
-    background-color: #333333;
-    text-align: center;
-    padding: 50px 0px;
-    color: white;
-    margin-top: 50px; }
-  body h1.titulo-seccion {
-    text-align: center;
-    margin: 70px 0px; }
-  body .menu-dark {
-    background-color: #333333f0;
-    padding: 20px; }
-  body #button_up {
-    display: none;
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-    margin: 30px;
-    background-color: #a6834280;
-    border: 2px solid #a68342;
-    border-radius: 150px;
-    padding: 12px 16px;
-    color: #fff; }
+  opacity: 1;
+}
+
+body #mi-especialidad {
+  /* Rotar imagenes */
+  /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+  /* This container is needed to position the front and back side */
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  /* Position the front and back side */
+  /* Style the front side (fallback if image is missing) */
+  /* Style the back side */
+  /* End rotar imagenes */
+}
+
+body #mi-especialidad .flip-box {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  /*border: 1px solid #f1f1f1;*/
+  border: none;
+  border-radius: 0px !important;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+}
+
+body #mi-especialidad .flip-box-inner {
+  position: relative;
+  width: auto;
+  height: 253px;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+body #mi-especialidad .flip-box:hover .flip-box-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+body #mi-especialidad .flip-box-front, body #mi-especialidad .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+body #mi-especialidad .flip-box-front {
+  background-color: #fff0;
+  color: black;
+}
+
+body #mi-especialidad .flip-box-back {
+  background-color: #2d2d2d;
+  color: white;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  height: inherit !important;
+  padding: 20px;
+  z-index: 600;
+}
+
+body #mi-especialidad .flip-box-back h2 {
+  padding: 20px;
+}
+
+body #mi-especialidad .flip-box-front .img-fluid {
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+body #mi-especialidad .titulo {
+  width: inherit;
+  position: absolute;
+  top: 12%;
+  color: white;
+  left: 0px;
+  font-size: 40px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  z-index: 600;
+}
+
+body #mi-especialidad .flip-box-front p {
+  width: inherit;
+  position: absolute;
+  top: 65%;
+  color: white;
+  left: 0px;
+  font-size: 23px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  z-index: 600;
+}
+
+body #pedi-presupuesto input.form-control {
+  height: 55px;
+}
+
+body #pedi-presupuesto .row:nth-child(2) {
+  background-color: #dddddd;
+  padding: 20px;
+}
+
+body #pedi-presupuesto #enviar {
+  background-color: #333333;
+  border: #333;
+  padding: 10px 20px;
+}
+
+body #pedi-presupuesto .container {
+  padding: 20px 0px;
+}
+
+body #contactame .fas, body #contactame .fab {
+  color: #dddddd;
+  padding-right: 20px;
+}
+
+body #contactame .a-whatsapp {
+  font-weight: 900;
+}
+
+body #contactame .redes div {
+  padding: 20px 0px;
+  font-size: 18px;
+}
+
+body footer {
+  background-color: #333333;
+  text-align: center;
+  padding: 50px 0px;
+  color: white;
+  margin-top: 50px;
+}
+
+body h1.titulo-seccion {
+  text-align: center;
+  margin: 70px 0px;
+}
+
+body .menu-dark {
+  background-color: #333333f0;
+  padding: 20px;
+}
+
+body #button_up {
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  margin: 30px;
+  background-color: #292929c7;
+  border: 2px solid #292929;
+  border-radius: 150px;
+  padding: 12px 16px;
+  color: #fff;
+}
 
 @media screen and (max-width: 992px) {
   body {
-    font-weight: bold;
-    background-color: blue; }
-    body .logo-mobile {
-      padding-right: 55px; }
-    body .fab {
-      font-weight: 400; }
-    body .logo_central {
-      display: none; }
-    body #slider-central .slider1, body #slider-central .slider2 {
-      height: 70vw; }
-    body .nav-bar {
-      background-color: #333333 !important;
-      padding: 20px; }
-    body nav {
-      background-color: #333333; }
-    body .navbar-brand {
-      margin: 0 auto;
-      width: auto; } }
+    background-color: blue;
+  }
+  body .logo-mobile {
+    padding-right: 55px;
+  }
+  body .logo-mobile img {
+    width: 80%;
+  }
+  body .fab {
+    font-weight: 400;
+  }
+  body .logo_central {
+    display: none;
+  }
+  body #slider-central .slider1, body #slider-central .slider2 {
+    height: 70vw;
+  }
+  body #slider-central .slider1 h1, body #slider-central .slider2 h1 {
+    font-size: 40px;
+    padding: 20px;
+    padding-right: 0px;
+  }
+  body .nav-bar {
+    background-color: #333333 !important;
+    padding: 20px;
+  }
+  body nav {
+    background-color: #333333;
+  }
+  body .navbar-brand {
+    margin: 0 auto;
+    width: auto;
+  }
+  body #mi-especialidad .flip-box-inner {
+    position: relative;
+    width: auto;
+    height: 400px;
+    text-align: center;
+    -webkit-transition: -webkit-transform 0.8s;
+    transition: -webkit-transform 0.8s;
+    transition: transform 0.8s;
+    transition: transform 0.8s, -webkit-transform 0.8s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    margin: 20px;
+  }
+  body #mi-especialidad .titulo {
+    font-size: 60px;
+    padding: 40px;
+  }
+  body #mi-especialidad .flip-box-back h2 {
+    font-size: 50px;
+  }
+  body #mi-especialidad .flip-box-back p {
+    font-size: 20px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   body {
-    font-weight: bold;
-    background-color: pink; }
-    body .logo-mobile {
-      padding-right: 55px; }
-    body #slider-central .slider1, body #slider-central .slider2 {
-      height: 100vw; } }
+    background-color: pink;
+  }
+  body .logo-mobile {
+    padding-right: 55px;
+  }
+  body #slider-central .slider1, body #slider-central .slider2 {
+    height: 100vw;
+  }
+}
+
 @media screen and (max-width: 576px) {
   body {
     background-color: yellow;
-    font-weight: bold; }
-    body .logo-mobile {
-      padding-right: 55px; } }
-
+  }
+  body .logo-mobile {
+    padding-right: 55px;
+  }
+  body #slider-central .slider1 h1, body #slider-central .slider2 h1 {
+    font-size: 25px;
+    padding: 50px;
+    padding-right: 0px;
+  }
+}
 /*# sourceMappingURL=global.css.map */

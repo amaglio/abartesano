@@ -12,6 +12,7 @@ body .menu-negro {
 body .navbar {
   z-index: 600;
   padding: 0px;
+  padding-top: 10px;
   /* 
       ========================
             BUTTON ONE
@@ -25,8 +26,9 @@ body .navbar a {
 }
 
 body .navbar .fab {
-  font-size: 25px;
+  font-size: 30px;
   margin: 0px 13px;
+  font-weight: 100;
 }
 
 body .navbar .navbar-nav {
@@ -34,7 +36,7 @@ body .navbar .navbar-nav {
 }
 
 body .navbar .iconos {
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 }
 
 body .navbar .fa-bars {
@@ -42,7 +44,7 @@ body .navbar .fa-bars {
   color: white;
 }
 
-body .navbar div[class*=box] {
+body .navbar div[class*="box"] {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,7 +62,7 @@ body .navbar .logo_central img {
 }
 
 body .navbar .btn-one {
-  color: #FFF;
+  color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   position: relative;
@@ -74,7 +76,7 @@ body .navbar .btn-one span {
 }
 
 body .navbar .btn-one::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -105,7 +107,7 @@ body .navbar .btn-one:hover::before {
 }
 
 body .navbar .btn-one::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -122,6 +124,10 @@ body .navbar .btn-one:hover::after {
           transform: scale(0.1, 1);
 }
 
+body .navbar .redes-mobile {
+  border-top: 1px solid #dddddd;
+}
+
 body #slider-central {
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
@@ -132,7 +138,8 @@ body #slider-central {
   position: relative;
 }
 
-body #slider-central .swiper-button-prev, body #slider-central .swiper-button-next {
+body #slider-central .swiper-button-prev,
+body #slider-central .swiper-button-next {
   color: white;
   padding: 0px 20px;
 }
@@ -140,7 +147,7 @@ body #slider-central .swiper-button-prev, body #slider-central .swiper-button-ne
 body #slider-central .slider1, body #slider-central .slider2 {
   background-size: cover;
   -o-background-size: cover;
-  height: 47vw;
+  height: 55vw;
   color: white;
 }
 
@@ -219,7 +226,7 @@ body #mis-trabajos .menu-tipos-trabajos li {
 }
 
 body #mis-trabajos .menu-tipos-trabajos li:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -230,12 +237,12 @@ body #mis-trabajos .menu-tipos-trabajos li:before {
   -webkit-transform: scaleY(2);
           transform: scaleY(2);
   opacity: 0;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 body #mis-trabajos .menu-tipos-trabajos li:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 2px;
   left: 0;
@@ -245,8 +252,8 @@ body #mis-trabajos .menu-tipos-trabajos li:after {
   -webkit-transform: scale(0);
           transform: scale(0);
   opacity: 0;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   z-index: -1;
 }
 
@@ -266,7 +273,7 @@ body #mis-trabajos .menu-tipos-trabajos li:hover:after {
   opacity: 1;
 }
 
-body #mi-especialidad {
+body #me-especializo {
   /* Rotar imagenes */
   /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
   /* This container is needed to position the front and back side */
@@ -277,7 +284,7 @@ body #mi-especialidad {
   /* End rotar imagenes */
 }
 
-body #mi-especialidad .flip-box {
+body #me-especializo .flip-box {
   background-color: transparent;
   width: 100%;
   height: 100%;
@@ -289,7 +296,7 @@ body #mi-especialidad .flip-box {
   /* Remove this if you don't want the 3D effect */
 }
 
-body #mi-especialidad .flip-box-inner {
+body #me-especializo .flip-box-inner {
   position: relative;
   width: auto;
   height: 253px;
@@ -302,12 +309,13 @@ body #mi-especialidad .flip-box-inner {
           transform-style: preserve-3d;
 }
 
-body #mi-especialidad .flip-box:hover .flip-box-inner {
+body #me-especializo .flip-box:hover .flip-box-inner {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
-body #mi-especialidad .flip-box-front, body #mi-especialidad .flip-box-back {
+body #me-especializo .flip-box-front,
+body #me-especializo .flip-box-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -315,12 +323,12 @@ body #mi-especialidad .flip-box-front, body #mi-especialidad .flip-box-back {
           backface-visibility: hidden;
 }
 
-body #mi-especialidad .flip-box-front {
+body #me-especializo .flip-box-front {
   background-color: #fff0;
   color: black;
 }
 
-body #mi-especialidad .flip-box-back {
+body #me-especializo .flip-box-back {
   background-color: #2d2d2d;
   color: white;
   -webkit-transform: rotateY(180deg);
@@ -330,17 +338,17 @@ body #mi-especialidad .flip-box-back {
   z-index: 600;
 }
 
-body #mi-especialidad .flip-box-back h2 {
+body #me-especializo .flip-box-back h2 {
   padding: 20px;
 }
 
-body #mi-especialidad .flip-box-front .img-fluid {
+body #me-especializo .flip-box-front .img-fluid {
   max-width: 100%;
   height: 100%;
   width: 100%;
 }
 
-body #mi-especialidad .titulo {
+body #me-especializo .titulo {
   width: inherit;
   position: absolute;
   top: 12%;
@@ -352,7 +360,7 @@ body #mi-especialidad .titulo {
   z-index: 600;
 }
 
-body #mi-especialidad .flip-box-front p {
+body #me-especializo .flip-box-front p {
   width: inherit;
   position: absolute;
   top: 65%;
@@ -370,7 +378,7 @@ body #pedi-presupuesto input.form-control {
 
 body #pedi-presupuesto .row:nth-child(2) {
   background-color: #dddddd;
-  padding: 20px;
+  padding: 50px 100px;
 }
 
 body #pedi-presupuesto #enviar {
@@ -383,9 +391,37 @@ body #pedi-presupuesto .container {
   padding: 20px 0px;
 }
 
-body #contactame .fas, body #contactame .fab {
+body #pedi-presupuesto #div_resultado {
+  width: 100%;
+}
+
+body #pedi-presupuesto .resultado {
+  background-color: #333333;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+body #pedi-presupuesto #imagen_loading {
+  display: none;
+  width: 10%;
+}
+
+body #contactame .row:nth-child(2) {
+  background-color: #dddddd;
+  padding: 50px 100px;
+}
+
+body #contactame .fas,
+body #contactame .fab {
   color: #dddddd;
   padding-right: 20px;
+  color: #333;
+  padding-right: 20px;
+  text-align: center;
+  font-size: 30px;
 }
 
 body #contactame .a-whatsapp {
@@ -429,14 +465,11 @@ body #button_up {
 }
 
 @media screen and (max-width: 992px) {
-  body {
-    background-color: blue;
-  }
   body .logo-mobile {
-    padding-right: 55px;
+    /*padding-right: 55px;*/
   }
   body .logo-mobile img {
-    width: 80%;
+    /*width: 80%;*/
   }
   body .fab {
     font-weight: 400;
@@ -463,7 +496,7 @@ body #button_up {
     margin: 0 auto;
     width: auto;
   }
-  body #mi-especialidad .flip-box-inner {
+  body #me-especializo .flip-box-inner {
     position: relative;
     width: auto;
     height: 400px;
@@ -476,24 +509,25 @@ body #button_up {
             transform-style: preserve-3d;
     margin: 20px;
   }
-  body #mi-especialidad .titulo {
-    font-size: 60px;
-    padding: 40px;
+  body #me-especializo .titulo {
+    font-size: 30px;
+    padding: 20px;
   }
-  body #mi-especialidad .flip-box-back h2 {
-    font-size: 50px;
+  body #me-especializo .flip-box-back h2 {
+    font-size: 30px;
   }
-  body #mi-especialidad .flip-box-back p {
+  body #me-especializo .flip-box-back p {
     font-size: 20px;
+  }
+  body #contactame .redes {
+    text-align: center;
+    padding-bottom: 40px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    background-color: pink;
-  }
   body .logo-mobile {
-    padding-right: 55px;
+    /*padding-right: 55px;*/
   }
   body #slider-central .slider1, body #slider-central .slider2 {
     height: 100vw;
@@ -501,16 +535,37 @@ body #button_up {
 }
 
 @media screen and (max-width: 576px) {
-  body {
-    background-color: yellow;
-  }
   body .logo-mobile {
-    padding-right: 55px;
+    /*padding-right: 55px;*/
+  }
+  body #slider-central .swiper-pagination {
+    bottom: 50px;
+  }
+  body #slider-central .swiper-pagination .swiper-pagination-bullet {
+    background: #fff;
+  }
+  body #slider-central .slider1, body #slider-central .slider2 {
+    height: 150vw;
   }
   body #slider-central .slider1 h1, body #slider-central .slider2 h1 {
-    font-size: 25px;
+    font-size: 20px;
     padding: 50px;
     padding-right: 0px;
+    padding-top: 50px;
+  }
+  body #slider-central .swiper-button-prev,
+  body #slider-central .swiper-button-next {
+    display: none;
+  }
+  body #slider-central #prologo-central .col-lg-12 {
+    padding: 20px;
+    border-radius: 0px;
+  }
+  body #pedi-presupuesto .row:nth-child(2) {
+    padding: 20px;
+  }
+  body #me-especializo .flip-box-inner {
+    height: 250px;
   }
 }
 /*# sourceMappingURL=global.css.map */

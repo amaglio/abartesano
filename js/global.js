@@ -8,6 +8,7 @@ function cargarSlider()
         // If we need pagination
         pagination: {
           el: '.swiper-pagination',
+          type: 'bullets',
         },
 
         // Navigation arrows
@@ -20,6 +21,9 @@ function cargarSlider()
         scrollbar: {
           el: '.swiper-scrollbar',
         },
+        autoplay: {
+          delay: 4000,
+        }
       })
 
 }
@@ -27,7 +31,6 @@ function cargarSlider()
 
 function cargarTrabajos(pTipoTrabajo)
 { 
-  
   $.getJSON( "./data/trabajos.json", function( data ) 
   { 
     $( "#gallery" ).remove();
@@ -61,7 +64,14 @@ function cargarTrabajos(pTipoTrabajo)
 }
 
 function controladorMenu()
-{
+{ 
+  var scroll = $(window).scrollTop();
+ 
+  if(scroll > 150)
+    $( ".navbar" ).addClass( "menu-negro" );
+  else
+    $( ".navbar" ).removeClass( "menu-negro" );
+
   $(window).scroll(function (event) {
       var scroll = $(window).scrollTop();
       // console.log(scroll);
@@ -110,10 +120,87 @@ $("#button_up").click(function(){
      $("HTML, BODY").animate({ scrollTop: 0 }, 1000); 
 });
 
+function controladorScrollto(){
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+
+
+      var width = $(window).width();
+      var yOffset;
+
+      if (width < 992){
+         yOffset = -170;
+      }
+      else
+      {
+        yOffset = -100;
+      }
+
+      var element = document.querySelector(this.getAttribute("href"));
+      
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({top: y, behavior: 'smooth'});
+
+      
+    });
+  });
+}
+
+function controladorContacto(){
+  
+  $( "#presupuesto" ).submit(function( event ) {
+    alert( "Handler for .submit() called." );
+    event.preventDefault();
+    $("#imagen_loading").show();
+
+    var formulario = {};
+
+    formulario.nombre = $("input#nombre").val();
+    formulario.apellido = $("input#apellido").val();
+    formulario.email = $("input#email").val();
+    formulario.telefono = $("input#telefono").val(); 
+    formulario.comentario = $("textarea#comentario").val(); 
+
+    $.ajax({
+      url: "./mail/procesa_email.php",
+      data: { variable: JSON.stringify(formulario) },
+      async: true,
+      type: 'POST',
+      dataType: 'JSON',
+      success: function(data)
+      { 
+        console.log(data);
+        $("#imagen_loading").hide();
+        $("#enviar").prop( "disabled", false );
+        $("#enviar").css( "background-color", '#a68342' );
+        $("#div_resultado").html( "<div class='resultado'> Email enviado exitosamente </div>" );
+        $( "#presupuesto" )[0].reset();
+
+      },
+      error: function(x, status, error){
+        console.log("error: "+error );
+      } 
+
+
+  });
+
+  });
+
+}
+
 $(document).ready(function() {
+
+  $('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+  });
 
   cargarSlider();  
   cargarTrabajos("barandas"); 
   controladorMenu();
   controladorBottomup();
+  controladorScrollto();
+  controladorContacto();
+
 })

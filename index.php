@@ -1,23 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
   <!-- Bootstrap CSS -->
 
-  <link rel="stylesheet" href="css/bootstrap-4.0.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/bootstrap-4.0.0/dist/css/bootstrap.min.css" />
 
-  <link rel="stylesheet" type="text/css" href="./css/global.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/global.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
   <script src="https://kit.fontawesome.com/4273774a54.js" crossorigin="anonymous"></script>
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Trirong&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Trirong&display=swap" rel="stylesheet" />
 
   <!-- Galeria -->
-  <link rel='stylesheet' href='css/unitegallery/css/unite-gallery.css' type='text/css' />
+  <link rel="stylesheet" href="./css/unitegallery/css/unite-gallery.css" type="text/css" />
 
   <title>AB ARTESANO - Excelencia en acero inoxidable</title>
 </head>
@@ -27,19 +27,17 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
       </button>
 
-      <a class="navbar-brand logo-mobile text-center d-block  d-lg-none w-10" href="./index.php"> <img
-          class="img img-responsive " src="./img/logo/ab_logo_blanco.png"> </a>
+      <a class="navbar-brand logo-mobile text-center d-block  d-lg-none w-10" href="./index.html">
+        <img class="img img-responsive " src="./img/logo/logo-blanco-mobile.png" />
+      </a>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
         <ul class="navbar-nav col-lg-5  ">
-
           <li class="nav-item col-lg-6">
             <a class="nav-link" href="#mis-trabajos">
               <div class="box-1">
@@ -51,7 +49,7 @@
           </li>
 
           <li class="nav-item col-lg-6">
-            <a class="nav-link" href="#mis-especialidades">
+            <a class="nav-link" href="#me-especializo">
               <div class="box-1">
                 <div class="btn btn-one">
                   <span>Me especializo</span>
@@ -61,11 +59,11 @@
           </li>
         </ul>
 
-        <a class="navbar-brand col-lg-2 text-center logo_central" href="./index.php"> <img class="img img-responsive"
-            src="./img/logo/ab_logo_blanco.png"> </a>
+        <a class="navbar-brand col-lg-2 text-center logo_central" href="./index.html">
+          <img class="img img-responsive" src="./img/logo/ab_logo_blanco.png" />
+        </a>
 
         <ul class="navbar-nav col-lg-5" id="segundo_menu">
-
           <li class="nav-item col-lg-6">
             <a class="nav-link" href="#contactame">
               <div class="box-1">
@@ -81,12 +79,8 @@
             <a href=""><i><i class="fab fa-instagram"></i></i></a>
             <a href=""><i><i class="fab fa-facebook-f"></i></i></a>
           </li>
-
         </ul>
       </div>
-
-
-
     </div>
     <div class="container redes-mobile d-block d-lg-none">
       <div class="row">
@@ -101,24 +95,26 @@
         </div>
       </div>
     </div>
-
   </nav>
 
   <!-- Slider central -->
-  <section id="slider-central"  >
-
+  <section id="slider-central">
     <div class="swiper-container">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide slider1">
-          <h1>Trabajando el acero <br> <span>desde 1969</span></h1>
-
+          <h1>
+            Trabajando el acero <br />
+            <span>desde 1969</span>
+          </h1>
         </div>
         <div class="swiper-slide slider2">
-          <h1>El mejor precio del mercado <br> <span>Mejoro cualquier presupuesto</span></h1>
+          <h1>
+            El mejor precio del mercado <br />
+            <span>Mejoro cualquier presupuesto</span>
+          </h1>
         </div>
-
       </div>
       <!-- If we need pagination -->
       <div class="swiper-pagination"></div>
@@ -136,13 +132,13 @@
         <div class="row">
           <div class="col-lg-12">
             <p>
-              Soy Alejandro Jorge Bertini, artesano en acero inoxidable con más de 50 años de experiencia
+              Soy Alejandro Jorge Bertini, artesano en acero inoxidable con
+              más de 50 años de experiencia
             </p>
           </div>
         </div>
       </div>
     </div>
-
   </section>
 
   <!-- Mis trabajos -->
@@ -150,106 +146,34 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h1 class="titulo-seccion"> MIS TRABAJOS</h1>
+          <h1 class="titulo-seccion">MIS TRABAJOS</h1>
         </div>
         <div class="col-lg-2">
           <ul class="list-group menu-tipos-trabajos">
-            <li class="list-group-item tipo-de-trabajo"> Barandas </li>
-            <li class="list-group-item tipo-de-trabajo"> Porteros </li>
-            <li class="list-group-item tipo-de-trabajo"> Frentes </li>
-            <li class="list-group-item tipo-de-trabajo"> Hogar </li>
-            <li class="list-group-item tipo-de-trabajo"> Negocios </li>
-            <li class="list-group-item tipo-de-trabajo"> Puertas </li>
-            <li class="list-group-item tipo-de-trabajo"> Campanas </li>
-            <li class="list-group-item tipo-de-trabajo"> Helices </li>
+            <li class="list-group-item tipo-de-trabajo">Barandas</li>
+            <li class="list-group-item tipo-de-trabajo">Porteros</li>
+            <li class="list-group-item tipo-de-trabajo">Frentes</li>
+            <li class="list-group-item tipo-de-trabajo">Hogar</li>
+            <li class="list-group-item tipo-de-trabajo">Negocios</li>
+            <li class="list-group-item tipo-de-trabajo">Puertas</li>
+            <li class="list-group-item tipo-de-trabajo">Campanas</li>
+            <li class="list-group-item tipo-de-trabajo">Helices</li>
           </ul>
         </div>
         <div class="col-lg-10 divGaleria">
-          <div id="gallery" style="display:none ">
-
-          </div>
+          <div id="gallery" style="display:none "></div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Mi  especialidad -->
-  <section id="mis-especialidades">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h1 class="titulo-seccion"> MIS ESPECIALIDAD</h1>
-        </div>
-        <div class="col-lg-4 col-md-6  servicio">
-          <a href="bodega.php">
-            <div class="flip-box">
-              <div class="flip-box-inner">
-                <div class="flip-box-front">
-                  <div class="oscurecer"></div>
-                  <img src="./img/mis-especialidades/barandas.jpg"
-                    class="img-responsive img-fluid rounded img_producto">
-                  <span class="titulo"> Barandas y hogar </span>
-
-                </div>
-                <div class="flip-box-back">
-                  <h2>Barandas y hogar</h2>
-                  <p>Construyo barandas de acero inoxidable de alto acabado en calidad. </p>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-lg-4 col-md-6 servicio">
-          <a href="olivares.php">
-            <div class="flip-box">
-              <div class="flip-box-inner">
-                <div class="flip-box-front">
-                  <div class="oscurecer"></div>
-                  <img src="./img/mis-especialidades/carpinteria.jpg"
-                    class="img-responsive img-fluid rounded img_producto">
-                  <span class="titulo"> Carpinteria Metalica </span>
-                </div>
-                <div class="flip-box-back">
-                  <h2>Carpinteria Metalica </h2>
-                  <p>Realizo porteros, frentes, campanas, helices, jaulas y muchos otros productos en acero inoxidable.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-12 col-lg-4  servicio">
-          <a href="turismo.php">
-            <div class="flip-box">
-              <div class="flip-box-inner">
-                <div class="flip-box-front">
-                  <div class="oscurecer"></div>
-                  <img src="./img/mis-especialidades/negocios.jpg"
-                    class="img-responsive img-fluid rounded img_producto">
-                  <span class="titulo"> Negocios </span>
-                </div>
-                <div class="flip-box-back">
-                  <h2>NEGOCIOS</h2>
-                  <p>Atendemos y realizamos equipos/estructuras a medida para todo tipo negocio. </p>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
       </div>
     </div>
   </section>
 
   <!-- Presupuesto -->
   <section id="pedi-presupuesto">
-    <form id="presupuesto" name="presupuesto">
+    <form id="presupuesto" name="presupuesto" method="POST" action="./mail/procesa_email.php">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-12">
-            <h1 class="titulo-seccion"> PEDI TU PRESPUESTO</h1>
+            <h1 class="titulo-seccion">PEDI TU PRESPUESTO</h1>
           </div>
         </div>
         <div class="row">
@@ -258,49 +182,133 @@
               <div class="col-lg-6">
                 <div class="form-group">
                   <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre"
-                    required="required">
+                    required="required" />
                 </div>
                 <div class="form-group">
                   <input type="text" class="form-control" id="apellido" name="apellido"
-                    placeholder="Ingresa tu apellido">
+                    placeholder="Ingresa tu apellido" />
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" id="email" name="email" placeholder="Ingresa tu email">
+                  <input type="text" class="form-control" id="email" name="email" placeholder="Ingresa tu email" />
                 </div>
                 <div class="form-group">
                   <input type="text" class="form-control" id="telefono" name="telefono"
-                    placeholder="Ingresa tu telefono" required="required">
+                    placeholder="Ingresa tu telefono" required="required" />
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="form-group">
-                  <textarea class="form-control" id="nombre" name="nombre" placeholder="Contame tu proyecto" rows="5"
+                  <textarea class="form-control" id="comentario" name="comentario" placeholder="Contame tu proyecto" rows="5"
                     required="required"></textarea>
                 </div>
               </div>
               <div class="col-lg-12 text-center">
-                <input class="btn btn-primary" type="submit" name="enviar" id="enviar" value="Enviar">
+                <input class="btn btn-primary" type="submit" name="enviar" id="enviar" value="Enviar" />
+                <img id="imagen_loading" src="./img/loading.gif">
               </div>
+              <div id="div_resultado"></div>
             </div>
           </div>
         </div>
       </div>
-
     </form>
+    
   </section>
+
+  <!-- Mi  especialidad -->
+  <section id="me-especializo">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="titulo-seccion">ME ESPECIALIZO</h1>
+        </div>
+        <div class="col-lg-4 col-md-6  servicio">
+          <a href="#">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <div class="oscurecer"></div>
+                  <img src="./img/mis-especialidades/barandas.jpg"
+                    class="img-responsive img-fluid rounded img_producto" />
+                  <span class="titulo"> Barandas y hogar </span>
+                </div>
+                <div class="flip-box-back">
+                  <h2>Barandas y hogar</h2>
+                  <p>
+                    Construyo barandas de acero inoxidable de alto acabado en
+                    calidad.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-md-6 servicio">
+          <a href="#">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <div class="oscurecer"></div>
+                  <img src="./img/mis-especialidades/carpinteria.jpg"
+                    class="img-responsive img-fluid rounded img_producto" />
+                  <span class="titulo"> Carpinteria Metalica </span>
+                </div>
+                <div class="flip-box-back">
+                  <h2>Carpinteria Metalica</h2>
+                  <p>
+                    Realizo porteros, frentes, campanas, helices, jaulas y
+                    muchos otros productos en acero inoxidable.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-12 col-lg-4  servicio">
+          <a href="#">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <div class="oscurecer"></div>
+                  <img src="./img/mis-especialidades/negocios.jpg"
+                    class="img-responsive img-fluid rounded img_producto" />
+                  <span class="titulo"> Negocios </span>
+                </div>
+                <div class="flip-box-back">
+                  <h2>NEGOCIOS</h2>
+                  <p>
+                    Atendemos y realizamos equipos/estructuras a medida para
+                    todo tipo negocio.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!-- Contactame -->
   <section id="contactame">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h1 class="titulo-seccion"> CONTÁCTAME</h1>
+          <h1 class="titulo-seccion">CONTÁCTAME</h1>
         </div>
         <div class="col-lg-6 redes">
-          <div> <i class="fas fa-2x fa-map-marker-alt"></i> Horacio Julián 555, Morón, Buenos Aires </div>
-          <div> <i class="fas fa-2x fa-phone"></i> 011 4483-1450 </div>
-          <div> <i class="fas fa-2x fa-at"></i> info@abartesano.com.ar </div>
-          <div> <a href="https://wa.me/1562930006"><i class="fab fa-2x fa-whatsapp"></i></a>1562930006 </div>
+          <div>
+            <i class="fas fa-2x fa-map-marker-alt"></i> Horacio Julián 555,
+            Morón, Buenos Aires
+          </div>
+          <div><i class="fas fa-2x fa-phone"></i> 011 4483-1450</div>
+          <div><i class="fas fa-2x fa-at"></i> info@abartesano.com.ar</div>
+          <div>
+            <a href="https://wa.me/1562930006"><i class="fab fa-2x fa-whatsapp"></i></a>1562930006
+          </div>
         </div>
         <div class="col-lg-6">
           <iframe
@@ -327,20 +335,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-  <script type='text/javascript' src='./css/unitegallery/js/unitegallery.min.js'></script>
-  <script type='text/javascript' src='./css/unitegallery/themes/tiles/ug-theme-tiles.js'></script>
+  <script type="text/javascript" src="./css/unitegallery/js/unitegallery.min.js"></script>
+  <script type="text/javascript" src="./css/unitegallery/themes/tiles/ug-theme-tiles.js"></script>
   <script type="text/javascript" src="./js/global.js"></script>
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-  </script>
 
 </body>
 

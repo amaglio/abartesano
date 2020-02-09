@@ -1,70 +1,63 @@
 $color-gris-oscuro: #333333;
 $color-gris-claro: #dddddd;
 $color-blanco: #fff;
-$font-family-tri:  'Trirong', serif;
-$font-family-open: 'Open Sans', sans-serif;
- 
-
+$font-family-tri: "Trirong", serif;
+$font-family-open: "Open Sans", sans-serif;
 
 $breakpoints: (
-
   xs: 576px,
   sm: 768px,
   md: 992px,
   lg: 1200px
-
 );
 
+body {
+  font-family: $font-family-tri;
 
-body{
-
-
-  font-family: $font-family-tri; 
-  
-  .menu-negro{
+  .menu-negro {
     transition: background-color 1s;
     background-color: #000000d6;
     padding-bottom: 10px !important;
   }
 
   // Navbar
-  .navbar{
+  .navbar {
     z-index: 600;
-    padding:  0px;
-    
+    padding: 0px;
+    padding-top: 10px;
 
-    a{
-      color:white;
+    a {
+      color: white;
       font-size: 18px;
     }
 
-    .fab{
-      font-size: 25px;
+    .fab {
+      font-size: 30px;
       margin: 0px 13px;
+      font-weight: 100;
     }
 
-    .navbar-nav{
+    .navbar-nav {
       text-align: center;
     }
-    
 
-    .iconos{
-      padding-top: .5rem;
+    .iconos {
+      padding-top: 0.5rem;
     }
 
-    .fa-bars{
+    .fa-bars {
       font-size: 37px;
       color: white;
     }
 
-    div[class*=box] { 
-      width: 100%; 
+    div[class*="box"] {
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
     }
-    
-    .logo_central img{
+
+    .logo_central img {
       width: 80%;
     }
 
@@ -73,71 +66,76 @@ body{
             BUTTON ONE
       ========================
       */
-      .btn-one {
-        color: #FFF;
-        transition: all 0.3s;
-        position: relative;
-      }
-      .btn-one span {
-        transition: all 0.3s;
-        font-size: 1.1rem;
-        letter-spacing: 1px;
-      }
-      .btn-one::before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        opacity: 0;
-        transition: all 0.3s;
-        border-top-width: 1px;
-        border-bottom-width: 1px;
-        border-top-style: solid;
-        border-bottom-style: solid;
-        border-top-color: rgba(255,255,255,0.5);
-        border-bottom-color: rgba(255,255,255,0.5);
-        transform: scale(0.1, 1);
-      }
-      .btn-one:hover span {
-        letter-spacing: 2px;
-      }
-      .btn-one:hover::before {
-        opacity: 1; 
-        transform: scale(1, 1); 
-      }
-      .btn-one::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        transition: all 0.3s;
-        //background-color: rgba(255,255,255,0.1);
-      }
-      .btn-one:hover::after {
-        opacity: 0; 
-        transform: scale(0.1, 1);
-      }
+    .btn-one {
+      color: #fff;
+      transition: all 0.3s;
+      position: relative;
+    }
+    .btn-one span {
+      transition: all 0.3s;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+    }
+    .btn-one::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0;
+      transition: all 0.3s;
+      border-top-width: 1px;
+      border-bottom-width: 1px;
+      border-top-style: solid;
+      border-bottom-style: solid;
+      border-top-color: rgba(255, 255, 255, 0.5);
+      border-bottom-color: rgba(255, 255, 255, 0.5);
+      transform: scale(0.1, 1);
+    }
+    .btn-one:hover span {
+      letter-spacing: 2px;
+    }
+    .btn-one:hover::before {
+      opacity: 1;
+      transform: scale(1, 1);
+    }
+    .btn-one::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      transition: all 0.3s;
+      //background-color: rgba(255,255,255,0.1);
+    }
+    .btn-one:hover::after {
+      opacity: 0;
+      transform: scale(0.1, 1);
+    }
+
+    .redes-mobile{
+        border-top: 1px solid $color-gris-claro;
+    }
+    
   }
 
   // Slider Central
-  #slider-central{
-
+  #slider-central {
     animation-duration: 3s;
     animation-delay: 2s;
     animation-iteration-count: infinite;
-  
+
     position: relative;
     //margin-top: -180px;
-    
-    .swiper-button-prev, .swiper-button-next{
+
+    .swiper-button-prev,
+    .swiper-button-next {
       color: white;
-      padding:0px 20px;
+      padding: 0px 20px;
     }
 
     %sliders {
@@ -145,10 +143,10 @@ body{
       -moz-background-size: cover;
       background-size: cover;
       -o-background-size: cover;
-      height: 47vw;
+      height: 55vw;
       color: white;
 
-       h1{
+      h1 {
         position: relative;
         margin-left: -50px;
         top: 50%;
@@ -157,59 +155,51 @@ body{
         letter-spacing: 1px;
         text-shadow: 2px 2px 2px #000;
 
-        span{
+        span {
           font-size: 22px;
         }
 
         text-align: center;
       }
-
-    }
-  
-    .slider1
-    {
-      background: linear-gradient( rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0) ), url('../img/slider/1.jpg') no-repeat center center fixed;
-      @extend %sliders;
- 
-
     }
 
-    
-    .slider2
-    {
-      background: linear-gradient( rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0) ), url('../img/slider/2.jpg') no-repeat center center fixed;
+    .slider1 {
+      background: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0)),
+        url("../img/slider/1.jpg") no-repeat center center fixed;
       @extend %sliders;
     }
 
-    .slider3
-    {
-      background: url('../img/slider/3.JPG') no-repeat center center fixed;
+    .slider2 {
+      background: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0)),
+        url("../img/slider/2.jpg") no-repeat center center fixed;
+      @extend %sliders;
+    }
+
+    .slider3 {
+      background: url("../img/slider/3.JPG") no-repeat center center fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       background-size: cover;
       -o-background-size: cover;
     }
 
-    #prologo-central .col-lg-12{
+    #prologo-central .col-lg-12 {
       padding: 30px 80px;
       background-color: $color-gris-oscuro;
       color: white;
       border-radius: 10px;
       position: relative;
       margin-top: -10%;
-      z-index: 20;    
+      z-index: 20;
       font-size: 22px;
       text-align: center;
       letter-spacing: 2px;
-
     }
   }
 
   // Mis trabajos
-  #mis-trabajos{
-    
-    .menu-tipos-trabajos{
-     
+  #mis-trabajos {
+    .menu-tipos-trabajos {
       li {
         cursor: pointer;
         list-style: none;
@@ -220,13 +210,13 @@ body{
         margin: 10px 0;
         padding: 10px 20px;
         text-decoration: none;
-        color: #262626; 
+        color: #262626;
         font-size: 16px;
-        letter-spacing: 1px; 
+        letter-spacing: 1px;
         transition: 1s;
         z-index: 1;
         &:before {
-          content: '';
+          content: "";
           position: absolute;
           top: 0;
           left: 0;
@@ -236,10 +226,10 @@ body{
           border-bottom: 2px solid #262626;
           transform: scaleY(2);
           opacity: 0;
-          transition: .3s;
+          transition: 0.3s;
         }
         &:after {
-          content: '';
+          content: "";
           position: absolute;
           top: 2px;
           left: 0;
@@ -248,7 +238,7 @@ body{
           background-color: #262626;
           transform: scale(0);
           opacity: 0;
-          transition: .3s;
+          transition: 0.3s;
           z-index: -1;
         }
         &:hover {
@@ -261,225 +251,225 @@ body{
             transform: scaleY(1);
             opacity: 1;
           }
-          
         }
       }
-      
+
       flex-wrap: wrap;
       justify-content: space-between;
       flex-direction: inherit;
-
     }
   }
 
-  // Mis especialidades 
-  #mi-especialidad{
-
+  // Mis especialidades
+  #me-especializo {
     /* Rotar imagenes */
 
-      /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-      .flip-box 
-      {
-        background-color: transparent;
-        width: 100%;
-        height: 100%;
-        /*border: 1px solid #f1f1f1;*/
-        border: none;
-        border-radius: 0px !important;
-        perspective: 1000px; /* Remove this if you don't want the 3D effect */
-      }
+    /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+    .flip-box {
+      background-color: transparent;
+      width: 100%;
+      height: 100%;
+      /*border: 1px solid #f1f1f1;*/
+      border: none;
+      border-radius: 0px !important;
+      perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    }
 
-      /* This container is needed to position the front and back side */
-      .flip-box-inner {
-        position: relative;
-        width: auto;
-        height: 253px;
-        text-align: center;
-        transition: transform 0.8s;
-        transform-style: preserve-3d;
-       
-      }
+    /* This container is needed to position the front and back side */
+    .flip-box-inner {
+      position: relative;
+      width: auto;
+      height: 253px;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
 
-      /* Do an horizontal flip when you move the mouse over the flip box container */
-      .flip-box:hover .flip-box-inner {
-        transform: rotateY(180deg);
-      }
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-box:hover .flip-box-inner {
+      transform: rotateY(180deg);
+    }
 
-      /* Position the front and back side */
-      .flip-box-front, .flip-box-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-      }
+    /* Position the front and back side */
+    .flip-box-front,
+    .flip-box-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
 
-      /* Style the front side (fallback if image is missing) */
-      .flip-box-front {
-        background-color: #fff0;
-        color: black;
-      }
+    /* Style the front side (fallback if image is missing) */
+    .flip-box-front {
+      background-color: #fff0;
+      color: black;
+    }
 
-      /* Style the back side */
-      .flip-box-back {
-        background-color: #2d2d2d;
-        color: white;
-        transform: rotateY(180deg);
-        height:inherit !important;
-        padding: 20px;
-        z-index: 600;
-      } 
+    /* Style the back side */
+    .flip-box-back {
+      background-color: #2d2d2d;
+      color: white;
+      transform: rotateY(180deg);
+      height: inherit !important;
+      padding: 20px;
+      z-index: 600;
+    }
 
+    .flip-box-back h2 {
+      padding: 20px;
+    }
 
-      .flip-box-back h2{
-        padding:20px;
-      }
+    .flip-box-front .img-fluid {
+      max-width: 100%;
+      height: 100%;
+      width: 100%;
+    }
 
-      .flip-box-front .img-fluid {
+    .titulo {
+      width: inherit;
+      position: absolute;
+      top: 12%;
+      color: white;
+      left: 0px;
+      font-size: 40px;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+      font-weight: 500;
+      z-index: 600;
+    }
 
-          max-width: 100%;
-          height: 100%;
-          width: 100%;
-
-      }
-
-      .titulo {
-
-        width: inherit;
-        position: absolute;
-        top: 12%;
-        color: white;
-        left: 0px;
-        font-size: 40px;
-        text-shadow: 0 0 10px rgba(0,0,0,0.8);
-        font-weight: 500;
-        z-index: 600;
-      }
-
-      .flip-box-front p{
-
-          width: inherit;
-          position: absolute;
-          top: 65%;
-          color: white;
-          left: 0px;
-          font-size: 23px;
-          text-shadow: 0 0 10px rgba(0,0,0,0.8);
-          font-weight: 500;
-          z-index: 600;
-      }
+    .flip-box-front p {
+      width: inherit;
+      position: absolute;
+      top: 65%;
+      color: white;
+      left: 0px;
+      font-size: 23px;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+      font-weight: 500;
+      z-index: 600;
+    }
 
     /* End rotar imagenes */
   }
-  
+
   // Presupuesto
-  #pedi-presupuesto{
-    
- 
-    input.form-control{
+  #pedi-presupuesto {
+    input.form-control {
       height: 55px;
     }
 
-    .row:nth-child(2){
+    .row:nth-child(2) {
       background-color: $color-gris-claro;
-      padding: 20px;
-    } 
-    
-    #enviar{
+      padding: 50px 100px;
+    }
+
+    #enviar {
       background-color: $color-gris-oscuro;
-      border:#333;
+      border: #333;
       padding: 10px 20px;
     }
 
-    .container{
+    .container {
       padding: 20px 0px;
+    }
+    
+    #div_resultado{
+      width: 100%;
+    }
+
+    .resultado{ 
+      background-color:$color-gris-oscuro;
+      width: 100%;
+      margin-top: 20px;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    #imagen_loading{
+      display: none;
+      width: 10%;
     }
 
   }
-  
-  // Contactame 
-  #contactame{
 
-    .fas, .fab{
-      color:  $color-gris-claro;
-      padding-right: 20px;
+  // Contactame
+  #contactame {
+    .row:nth-child(2) {
+      background-color: $color-gris-claro;
+      padding: 50px 100px;
     }
 
-    .a-whatsapp{
+    .fas,
+    .fab {
+      color: $color-gris-claro;
+      padding-right: 20px;
+      color: #333;
+      padding-right: 20px;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .a-whatsapp {
       font-weight: 900;
     }
-  
-    .redes{
-        
-      div{
+
+    .redes {
+      div {
         padding: 20px 0px;
         font-size: 18px;
       }
-
     }
-   
+    
   }
-  
 
-  // GENERALES 
-  footer{
+  // GENERALES
+  footer {
     background-color: $color-gris-oscuro;
     text-align: center;
-    padding:  50px 0px;
+    padding: 50px 0px;
     color: white;
     margin-top: 50px;
   }
 
-  h1.titulo-seccion{
+  h1.titulo-seccion {
     text-align: center;
     margin: 70px 0px;
-  } 
+  }
 
-  .menu-dark{
+  .menu-dark {
     background-color: #333333f0;
     padding: 20px;
   }
 
-  #button_up{
+  #button_up {
     display: none;
     position: fixed;
     bottom: 0px;
     right: 0px;
     margin: 30px;
-    background-color:#292929c7;
+    background-color: #292929c7;
     border: 2px solid#292929;
     border-radius: 150px;
     padding: 12px 16px;
     color: #fff;
   }
-
-
 }
-
-
 
 //
 //  MEDIA QUERIES
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 @mixin mq($mq-breakpoint, $mq-breakpoints: $breakpoints) {
-  
-  @if map-has-key($mq-breakpoints, $mq-breakpoint) 
-  {
-  
+  @if map-has-key($mq-breakpoints, $mq-breakpoint) {
     $mq-breakpoint: map-get($mq-breakpoints, $mq-breakpoint);
-    
+
     @media screen and (max-width: #{$mq-breakpoint}) {
       @content;
     }
-
-  }
-  @else 
-  {
-
+  } @else {
     @warn 'Invalid breakpoint: #{$breakpoint}.';
   }
-
- 
 }
 
 @include mq(lg) {
@@ -488,61 +478,52 @@ body{
   }
 }
 
-
 @include mq(md) {
-
   body {
+     
 
-    background-color: blue;
-    
-
-    .logo-mobile{
-      padding-right: 55px;
-      img{
-        width: 80%;
+    .logo-mobile {
+       /*padding-right: 55px;*/
+      img {
+        /*width: 80%;*/
       }
     }
 
-    .fab{
+    .fab {
       font-weight: 400;
     }
 
-    .logo_central{
+    .logo_central {
       display: none;
     }
-    
-    #slider-central{
-    
+
+    #slider-central {
       %sliders {
         height: 70vw;
 
-        h1{
+        h1 {
           font-size: 40px;
           padding: 20px;
           padding-right: 0px;
         }
       }
-
-      
     }
- 
-    .nav-bar{
-      background-color: $color-gris-oscuro !important; 
+
+    .nav-bar {
+      background-color: $color-gris-oscuro !important;
       padding: 20px;
     }
 
-     nav{
-      background-color: $color-gris-oscuro; 
+    nav {
+      background-color: $color-gris-oscuro;
     }
 
-    .navbar-brand{
+    .navbar-brand {
       margin: 0 auto;
       width: auto;
-
     }
 
-    #mi-especialidad{
-
+    #me-especializo {
       .flip-box-inner {
         position: relative;
         width: auto;
@@ -552,64 +533,97 @@ body{
         transform-style: preserve-3d;
         margin: 20px;
       }
-      
-      .titulo{
-        font-size: 60px;
-        padding: 40px;
+
+      .titulo {
+        font-size: 30px;
+        padding: 20px;
       }
 
-      .flip-box-back{
-        h2{
-          font-size: 50px;
+      .flip-box-back {
+        h2 {
+          font-size: 30px;
         }
-        p{
+        p {
           font-size: 20px;
         }
       }
     }
 
+    #contactame{
+      .redes{
+        text-align: center;
+        padding-bottom: 40px;
+      }
+    }
   }
 }
 
 @include mq(sm) {
-  body {
-     background-color: pink;
-    
-    .logo-mobile{
-      padding-right: 55px;
+  body { 
+
+    .logo-mobile {
+     /*padding-right: 55px;*/
     }
 
     %sliders {
       height: 100vw;
     }
-
-
   }
 }
 
 @include mq(xs) {
   body {
-    
-    background-color: yellow;
+     
 
-    .logo-mobile{
-      padding-right: 55px;
+    .logo-mobile {
+      /*padding-right: 55px;*/
     }
 
-    #slider-central{
-    
-      %sliders { 
-
-        h1{
-          font-size: 25px;
-          padding: 50px;
-          padding-right: 0px;
+    #slider-central {
+      
+      .swiper-pagination{
+        bottom: 50px;
+        .swiper-pagination-bullet{
+          background: #fff;
         }
       }
 
-
       
+      %sliders {
+        height: 150vw;
+        h1 {
+          font-size: 20px;
+          padding: 50px;
+          padding-right: 0px;
+          padding-top: 50px;
+        }
+      }
+      .swiper-button-prev, .swiper-button-next{
+        display: none;
+      }
+
+      #prologo-central{
+        
+        .col-lg-12{
+          padding: 20px;
+          border-radius: 0px;
+        }
+        
+      }
+
     }
+
+    #pedi-presupuesto{
+      .row:nth-child(2){
+        padding: 20px;
+      }
+    }
+
+    #me-especializo{
+      .flip-box-inner{
+        height: 250px;
+      }
+    }
+
   }
 }
- 

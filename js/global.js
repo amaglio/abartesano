@@ -197,7 +197,7 @@ $(document).ready(function() {
   });
 
   cargarSlider();  
-  cargarTrabajos("barandas"); 
+  cargarTrabajos("porteros"); 
   controladorMenu();
   controladorBottomup();
   controladorScrollto();

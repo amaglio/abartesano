@@ -3,6 +3,7 @@ $color-gris-claro: #dddddd;
 $color-blanco: #fff;
 $font-family-tri: "Trirong", serif;
 $font-family-open: "Open Sans", sans-serif;
+$font-family-roboto: "Roboto";
 
 $breakpoints: (
   xs: 576px,
@@ -12,14 +13,33 @@ $breakpoints: (
 );
 
 body {
-  font-family: $font-family-tri;
-
+  font-family: $font-family-roboto;
+  .fixed-top{
+    position: absolute;
+  }
   .menu-negro {
     transition: background-color 1s;
-    background-color: #000000d6;
+    background-color: #000;
     padding-bottom: 10px !important;
   }
 
+  #enviar,
+  .btn-primary {
+    background-color: #111111c4;
+    border: #333;
+    padding: 16px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-top: 32px;
+    letter-spacing: 3px;
+    border: 1px solid black;
+  }
+
+  #enviar,
+  .btn-primary:hover {
+    background-color: #000;
+    border-color: #000;
+  }
   // Navbar
   .navbar {
     z-index: 600;
@@ -75,6 +95,7 @@ body {
       transition: all 0.3s;
       font-size: 1.1rem;
       letter-spacing: 1px;
+      font-size: 19px;
     }
     .btn-one::before {
       content: "";
@@ -117,10 +138,9 @@ body {
       transform: scale(0.1, 1);
     }
 
-    .redes-mobile{
-        border-top: 1px solid $color-gris-claro;
+    .redes-mobile {
+      border-top: 1px solid $color-gris-claro;
     }
-    
   }
 
   // Slider Central
@@ -130,12 +150,17 @@ body {
     animation-iteration-count: infinite;
 
     position: relative;
-    //margin-top: -180px;
+    //margin-top: -180px;\\
+
+    .swiper-wrapper {
+      max-height: 840px;
+    }
 
     .swiper-button-prev,
     .swiper-button-next {
       color: white;
-      padding: 0px 20px;
+      padding: 0% 15%;
+      padding-bottom: 20%;
     }
 
     %sliders {
@@ -149,9 +174,9 @@ body {
       h1 {
         position: relative;
         margin-left: -50px;
-        top: 50%;
+        top: 35%;
         margin-top: -50px;
-        font-size: 55px;
+        font-size: 50px;
         letter-spacing: 1px;
         text-shadow: 2px 2px 2px #000;
 
@@ -184,16 +209,17 @@ body {
     }
 
     #prologo-central .col-lg-12 {
-      padding: 30px 80px;
-      background-color: $color-gris-oscuro;
+      padding: 44px 80px;
+      background-color: #0d0c0ce6;
       color: white;
-      border-radius: 10px;
+      border-radius: 3px;
       position: relative;
       margin-top: -10%;
       z-index: 20;
-      font-size: 22px;
+      font-size: 30px;
       text-align: center;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
+      line-height: 61px;
     }
   }
 
@@ -260,6 +286,33 @@ body {
     }
   }
 
+  #publicidad {
+    margin: 100px 0px;
+    .parallax {
+      /* The image used */
+      background-image: url("../img/trabajos/barandas/2.jpg");
+
+      /* Set a specific height */
+      min-height: 600px;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+  .parallax:before {
+      content:'';
+      position: absolute;
+            top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0,0,0,0.6);
+    }
+  }
   // Mis especialidades
   #me-especializo {
     /* Rotar imagenes */
@@ -359,26 +412,20 @@ body {
     }
 
     .row:nth-child(2) {
-      background-color: $color-gris-claro;
-      padding: 50px 100px;
-    }
-
-    #enviar {
-      background-color: $color-gris-oscuro;
-      border: #333;
-      padding: 10px 20px;
+      //background-color: $color-gris-claro;
+      padding:  0px 100px;
     }
 
     .container {
       padding: 20px 0px;
     }
-    
-    #div_resultado{
+
+    #div_resultado {
       width: 100%;
     }
 
-    .resultado{ 
-      background-color:$color-gris-oscuro;
+    .resultado {
+      //background-color:$color-gris-oscuro;
       width: 100%;
       margin-top: 20px;
       padding: 20px;
@@ -386,11 +433,10 @@ body {
       text-align: center;
     }
 
-    #imagen_loading{
+    #imagen_loading {
       display: none;
       width: 10%;
     }
-
   }
 
   // Contactame
@@ -420,7 +466,6 @@ body {
         font-size: 18px;
       }
     }
-    
   }
 
   // GENERALES
@@ -480,10 +525,8 @@ body {
 
 @include mq(md) {
   body {
-     
-
     .logo-mobile {
-       /*padding-right: 55px;*/
+      /*padding-right: 55px;*/
       img {
         /*width: 80%;*/
       }
@@ -510,12 +553,12 @@ body {
     }
 
     .nav-bar {
-      background-color: $color-gris-oscuro !important;
+      background-color: #000 !important;
       padding: 20px;
     }
 
     nav {
-      background-color: $color-gris-oscuro;
+      background-color: #000;
     }
 
     .navbar-brand {
@@ -549,8 +592,8 @@ body {
       }
     }
 
-    #contactame{
-      .redes{
+    #contactame {
+      .redes {
         text-align: center;
         padding-bottom: 40px;
       }
@@ -559,10 +602,9 @@ body {
 }
 
 @include mq(sm) {
-  body { 
-
+  body {
     .logo-mobile {
-     /*padding-right: 55px;*/
+      /*padding-right: 55px;*/
     }
 
     %sliders {
@@ -573,57 +615,52 @@ body {
 
 @include mq(xs) {
   body {
-     
-
     .logo-mobile {
       /*padding-right: 55px;*/
     }
 
     #slider-central {
-      
-      .swiper-pagination{
+      .swiper-pagination {
         bottom: 50px;
-        .swiper-pagination-bullet{
+        .swiper-pagination-bullet {
           background: #fff;
         }
       }
 
-      
       %sliders {
         height: 150vw;
         h1 {
-          font-size: 20px;
-          padding: 50px;
+          font-size: 30px;
+          padding: 40px;
           padding-right: 0px;
           padding-top: 50px;
         }
       }
-      .swiper-button-prev, .swiper-button-next{
+      .swiper-button-prev,
+      .swiper-button-next {
         display: none;
       }
 
-      #prologo-central{
-        
-        .col-lg-12{
+      #prologo-central {
+        .col-lg-12 {
           padding: 20px;
           border-radius: 0px;
+          font-size: 20px;
+          line-height:40px;
         }
-        
       }
-
     }
 
-    #pedi-presupuesto{
-      .row:nth-child(2){
+    #pedi-presupuesto {
+      .row:nth-child(2) {
         padding: 20px;
       }
     }
 
-    #me-especializo{
-      .flip-box-inner{
+    #me-especializo {
+      .flip-box-inner {
         height: 250px;
       }
     }
-
   }
 }

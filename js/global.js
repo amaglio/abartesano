@@ -96,10 +96,13 @@ function controladorBottomup()
      if( lastScrollTop > 438 )
      {
       $("#button_up").css("display","block");
+      $("#button_what").css("display","block");
+      
      }
      else
      {
         $("#button_up").css("display","none");
+        $("#button_what").css("display","none");
      }
   });
  

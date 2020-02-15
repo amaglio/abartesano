@@ -303,12 +303,29 @@ body #mis-trabajos .menu-tipos-trabajos li:hover:after {
 }
 
 body #publicidad {
-  margin: 100px 0px;
+  margin: 80px 0px;
+}
+
+body #publicidad #texto {
+  min-height: 600px;
+  background-color: #0d0c0c94;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+  padding: 40px;
+  text-align: center;
+  color: white;
 }
 
 body #publicidad .parallax {
   /* The image used */
-  background-image: url("../img/trabajos/barandas/2.jpg");
   /* Set a specific height */
   min-height: 600px;
   /* Create the parallax scrolling effect */
@@ -320,13 +337,21 @@ body #publicidad .parallax {
 }
 
 body #publicidad .parallax:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+body #publicidad .publicidad1 {
+  background-image: url("../img/trabajos/barandas/2.jpg");
+}
+
+body #publicidad .publicidad2 {
+  background-image: url("../img/trabajos/frentes/3.jpg");
 }
 
 body #me-especializo {
@@ -503,13 +528,28 @@ body #button_up {
   display: none;
   position: fixed;
   bottom: 0px;
-  right: 0px;
+  right: 14%;
   margin: 30px;
   background-color: #292929c7;
   border: 2px solid #292929;
   border-radius: 150px;
   padding: 12px 16px;
   color: #fff;
+  z-index: 999;
+}
+
+body #button_what {
+  display: none;
+  position: fixed;
+  bottom: 30%;
+  left: 14%;
+  margin: 30px;
+  background-color: #292929c7;
+  border: 1px solid #292929;
+  border-radius: 150px;
+  padding: 12px 15px 12px 17px;
+  color: #fff;
+  z-index: 999;
 }
 
 @media screen and (max-width: 992px) {
@@ -583,9 +623,6 @@ body #button_up {
 }
 
 @media screen and (max-width: 576px) {
-  body .logo-mobile {
-    /*padding-right: 55px;*/
-  }
   body #slider-central .swiper-pagination {
     bottom: 50px;
   }
@@ -616,6 +653,43 @@ body #button_up {
   }
   body #me-especializo .flip-box-inner {
     height: 250px;
+  }
+  body #button_up {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 2%;
+    margin: 30px;
+    background-color: #292929c7;
+    border: 2px solid #292929;
+    border-radius: 150px;
+    padding: 12px 16px;
+    color: #fff;
+    z-index: 999;
+  }
+  body #button_what {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    left: 2%;
+    margin: 30px;
+    background-color: #292929c7;
+    border: 1px solid #292929;
+    border-radius: 150px;
+    padding: 12px 15px 12px 17px;
+    color: #fff;
+    z-index: 999;
+  }
+  body #publicidad #texto {
+    min-height: 400px;
+    background-color: #0d0c0c94;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body #publicidad .parallax {
+    min-height: 400px !important;
+    margin: 20px 0px;
   }
 }
 /*# sourceMappingURL=global.css.map */

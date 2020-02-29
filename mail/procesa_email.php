@@ -35,10 +35,12 @@ else
 	$mail->Username = "digipayargentina@gmail.com";  
 	$mail->Password = "digipay2016"; 
 	$mail->Port = 465;  
-	$mail->From = "adrian@magliola.com";  
-	$mail->FromName = "Web"; 
+	$mail->From = "abartesano@web.com";  
+	$mail->FromName = "Contacto web"; 
 
 	$mail->AddAddress("adrian.magliola@gmail.com"); 
+	$mail->AddAddress("bertinialejandrojorge@gmail.com"); 
+
 
 	$mail->IsHTML(true);  
 	$mail->Subject = "Contacto Web - Abartesano";  
